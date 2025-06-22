@@ -18,8 +18,8 @@ const About = () => {
               <User className="w-8 h-8 text-green-400 mb-4" />
               <h3 className="text-2xl font-semibold text-white mb-3">Who I Am</h3>
               <p className="text-gray-300 leading-relaxed">
-                I'm a dedicated cybersecurity student with a passion for ethical hacking and digital forensics. 
-                Currently pursuing my degree while building hands-on experience through labs, CTF competitions, 
+                I'm a dedicated student with a passion for ethical hacking and digital forensics. 
+                Currently pursuing my Masters of Computer Application degree while building hands-on experience through labs, CTF competitions, 
                 and personal projects that strengthen my technical skills.
               </p>
             </div>
