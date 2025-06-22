@@ -6,22 +6,22 @@ const Skills = () => {
     {
       title: "Security Tools",
       icon: Shield,
-      skills: ["Nmap", "Wireshark", "Metasploit", "Burp Suite", "OWASP ZAP", "Nessus"]
+      skills: ["Nmap", "Wireshark", "Metasploit", "Burp Suite"]
     },
     {
       title: "Operating Systems",
       icon: Terminal,
-      skills: ["Kali Linux", "Ubuntu", "Windows", "VMware", "VirtualBox", "Docker"]
+      skills: ["Kali Linux", "Ubuntu", "Windows", "VirtualBox"]
     },
     {
       title: "Programming",
       icon: Code,
-      skills: ["Python", "JavaScript", "Bash", "PowerShell", "SQL", "HTML/CSS"]
+      skills: ["Python", "JavaScript", "Bash", "PowerShell"]
     },
     {
       title: "Networking",
       icon: Network,
-      skills: ["TCP/IP", "DNS", "VPN", "Firewalls", "IDS/IPS", "Network Analysis"]
+      skills: ["TCP/IP", "DNS", "Network Analysis", "Firewalls"]
     }
   ];
 
@@ -76,18 +76,18 @@ const Skills = () => {
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div className="bg-gray-700 p-4 rounded-lg">
               <Bug className="w-8 h-8 text-green-400 mx-auto mb-3" />
-              <h4 className="text-lg font-semibold text-white mb-2">CEH Certification</h4>
-              <p className="text-gray-300 text-sm">Certified Ethical Hacker preparation</p>
+              <h4 className="text-lg font-semibold text-white mb-2">Ethical Hacking Fundamentals</h4>
+              <p className="text-gray-300 text-sm">Building a strong base with TryHackMe, focusing on networking, Linux, and Windows</p>
             </div>
             <div className="bg-gray-700 p-4 rounded-lg">
               <Database className="w-8 h-8 text-green-400 mx-auto mb-3" />
-              <h4 className="text-lg font-semibold text-white mb-2">OSCP Training</h4>
-              <p className="text-gray-300 text-sm">Offensive Security certification path</p>
+              <h4 className="text-lg font-semibold text-white mb-2">Pentesting Skills</h4>
+              <p className="text-gray-300 text-sm">Practicing hands-on techniques using tools like Nmap, Metasploit, and Burp Suite in a custom virtual lab</p>
             </div>
             <div className="bg-gray-700 p-4 rounded-lg">
               <Lock className="w-8 h-8 text-green-400 mx-auto mb-3" />
-              <h4 className="text-lg font-semibold text-white mb-2">Cloud Security</h4>
-              <p className="text-gray-300 text-sm">AWS & Azure security fundamentals</p>
+              <h4 className="text-lg font-semibold text-white mb-2">Wireshark & Network Analysis</h4>
+              <p className="text-gray-300 text-sm">Exploring how data moves across networks, analyzing packets, and identifying suspicious activity</p>
             </div>
           </div>
         </div>

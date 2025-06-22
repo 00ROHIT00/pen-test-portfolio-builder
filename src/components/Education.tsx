@@ -13,7 +13,7 @@ const Education = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          {/* Current Education */}
+          {/* Current Education - Masters */}
           <div className="bg-gray-700 p-8 rounded-lg border border-gray-600 mb-8 hover:border-green-400 transition-all duration-300">
             <div className="flex items-start space-x-6">
               <div className="bg-green-400 p-3 rounded-full">
@@ -21,7 +21,7 @@ const Education = () => {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold text-white mb-2">
-                  Bachelor of Science in Cybersecurity
+                  Masters of Computer Applications
                 </h3>
                 <p className="text-green-400 font-semibold mb-3">Your University Name</p>
                 <div className="flex flex-wrap gap-4 text-gray-300 mb-4">
@@ -35,14 +35,49 @@ const Education = () => {
                   </div>
                 </div>
                 <p className="text-gray-300 mb-4">
-                  Focused coursework in network security, ethical hacking, digital forensics, 
-                  and incident response. Maintaining strong GPA while participating in cybersecurity clubs and competitions.
+                  Advanced coursework in computer applications, cybersecurity, and software development. 
+                  Focusing on practical skills through hands-on projects and research.
                 </p>
                 <div className="flex flex-wrap gap-2">
+                  <span className="bg-gray-600 text-green-400 px-3 py-1 rounded-full text-sm">Advanced Programming</span>
+                  <span className="bg-gray-600 text-green-400 px-3 py-1 rounded-full text-sm">Cybersecurity</span>
                   <span className="bg-gray-600 text-green-400 px-3 py-1 rounded-full text-sm">Network Security</span>
-                  <span className="bg-gray-600 text-green-400 px-3 py-1 rounded-full text-sm">Ethical Hacking</span>
                   <span className="bg-gray-600 text-green-400 px-3 py-1 rounded-full text-sm">Digital Forensics</span>
-                  <span className="bg-gray-600 text-green-400 px-3 py-1 rounded-full text-sm">Risk Management</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bachelor's Education */}
+          <div className="bg-gray-700 p-8 rounded-lg border border-gray-600 mb-8 hover:border-green-400 transition-all duration-300">
+            <div className="flex items-start space-x-6">
+              <div className="bg-green-400 p-3 rounded-full">
+                <BookOpen className="w-6 h-6 text-black" />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-2xl font-semibold text-white mb-2">
+                  Bachelor of Computer Applications
+                </h3>
+                <p className="text-green-400 font-semibold mb-3">Your University Name</p>
+                <div className="flex flex-wrap gap-4 text-gray-300 mb-4">
+                  <div className="flex items-center space-x-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Completed: 2023</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Location</span>
+                  </div>
+                </div>
+                <p className="text-gray-300 mb-4">
+                  Foundational coursework in computer science, programming, and information technology. 
+                  Built strong technical foundation while developing problem-solving skills.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-gray-600 text-green-400 px-3 py-1 rounded-full text-sm">Programming</span>
+                  <span className="bg-gray-600 text-green-400 px-3 py-1 rounded-full text-sm">Database Management</span>
+                  <span className="bg-gray-600 text-green-400 px-3 py-1 rounded-full text-sm">Web Development</span>
+                  <span className="bg-gray-600 text-green-400 px-3 py-1 rounded-full text-sm">System Analysis</span>
                 </div>
               </div>
             </div>
@@ -67,12 +102,12 @@ const Education = () => {
               <div className="flex items-center space-x-4 mb-4">
                 <Award className="w-8 h-8 text-green-400" />
                 <div>
-                  <h3 className="text-xl font-semibold text-white">CEH (Planned)</h3>
-                  <p className="text-gray-400 text-sm">Target: 2024</p>
+                  <h3 className="text-xl font-semibold text-white">Redhat RHCSA</h3>
+                  <p className="text-gray-400 text-sm">Undergoing</p>
                 </div>
               </div>
               <p className="text-gray-300">
-                Certified Ethical Hacker certification for penetration testing and vulnerability assessment.
+                Red Hat Certified System Administrator certification for Linux system administration skills.
               </p>
             </div>
 
@@ -80,12 +115,12 @@ const Education = () => {
               <div className="flex items-center space-x-4 mb-4">
                 <Award className="w-8 h-8 text-green-400" />
                 <div>
-                  <h3 className="text-xl font-semibold text-white">Linux Essentials</h3>
+                  <h3 className="text-xl font-semibold text-white">Hacking Essentials</h3>
                   <p className="text-gray-400 text-sm">Completed 2023</p>
                 </div>
               </div>
               <p className="text-gray-300">
-                Linux Professional Institute certification covering Linux fundamentals and command line.
+                Learning the basics from TryHackMe, HackTheBox, and other platforms.
               </p>
             </div>
 
@@ -94,7 +129,7 @@ const Education = () => {
                 <Award className="w-8 h-8 text-green-400" />
                 <div>
                   <h3 className="text-xl font-semibold text-white">Google Cybersecurity</h3>
-                  <p className="text-gray-400 text-sm">Completed 2023</p>
+                  <p className="text-gray-400 text-sm">Planned</p>
                 </div>
               </div>
               <p className="text-gray-300">
