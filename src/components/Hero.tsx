@@ -1,19 +1,25 @@
 import { Shield, Terminal, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ChevronDown } from "lucide-react";
+
 const Hero = () => {
-  return <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-black">
-      {/* Animated background grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,0,0.03)_1px,transparent_1px)] bg-[size:50px_50px] animate-pulse"></div>
-      
-      {/* Floating icons */}
-      <div className="absolute top-20 left-20 animate-bounce">
-        <Shield className="w-6 h-6 text-green-400 opacity-60" />
-      </div>
-      <div className="absolute top-40 right-32 animate-bounce delay-100">
-        <Terminal className="w-8 h-8 text-green-400 opacity-40" />
-      </div>
-      <div className="absolute bottom-32 left-32 animate-bounce delay-200">
-        <Code className="w-7 h-7 text-green-400 opacity-50" />
+  const scrollToNextSection = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return <section className="min-h-screen flex items-center justify-center relative bg-gray-900">
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-900/95 to-gray-900/50 z-0"></div>
+        <div
+          className="absolute inset-0 bg-[url('/placeholder.svg')] opacity-10 z-0"
+          style={{
+            backgroundSize: "30px 30px",
+            backgroundPosition: "0 0, 15px 15px",
+          }}
+        ></div>
       </div>
 
       <div className="container mx-auto px-6 text-center z-10">
@@ -24,16 +30,17 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Aspiring Penetration Tester & Security Professional
-            <br />
             <span className="text-green-400 font-mono">[Student • Ethical Hacker • Security Analyst]</span>
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105">
-              View My Work
-            </Button>
-            <Button variant="outline" size="lg" className="border-green-400 text-green-400 hover:bg-green-400 hover:text-black px-8 py-3 text-lg transition-all duration-300 hover:scale-105">
+            <Button 
+              size="lg" 
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 text-lg 
+                transition-all duration-300 hover:scale-105 border-2 border-green-500
+                active:scale-95 active:translate-y-0.5 active:shadow-inner
+                shadow-lg shadow-green-900/20"
+            >
               Download Resume
             </Button>
           </div>
@@ -50,6 +57,15 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      <button 
+        onClick={scrollToNextSection}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-green-400 animate-slow-bounce
+          hover:text-green-300 cursor-pointer transition-colors duration-300
+          p-2 rounded-full hover:bg-green-400/10"
+      >
+        <ChevronDown className="w-8 h-8" />
+      </button>
     </section>;
 };
 export default Hero;
