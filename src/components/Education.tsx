@@ -90,7 +90,7 @@ const Education = () => {
                 <Award className="w-8 h-8 text-green-400" />
                 <div>
                   <h3 className="text-xl font-semibold text-white">CompTIA Security+</h3>
-                  <p className="text-gray-400 text-sm">In Progress</p>
+                  <p className="text-gray-400 text-sm">Planned</p>
                 </div>
               </div>
               <p className="text-gray-300">
@@ -135,42 +135,6 @@ const Education = () => {
               <p className="text-gray-300">
                 Professional certificate covering cybersecurity fundamentals and hands-on skills.
               </p>
-            </div>
-          </div>
-
-          {/* Additional Training */}
-          <div className="mt-8 bg-gradient-to-r from-gray-700 to-gray-600 p-8 rounded-lg border border-gray-600">
-            <h3 className="text-2xl font-semibold text-white mb-6 text-center">
-              Additional Training & Learning
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <h4 className="text-lg font-semibold text-green-400 mb-2">Online Platforms</h4>
-                <ul className="text-gray-300 space-y-1 text-sm">
-                  <li>TryHackMe</li>
-                  <li>HackTheBox</li>
-                  <li>Cybrary</li>
-                  <li>SANS Cyber Aces</li>
-                </ul>
-              </div>
-              <div className="text-center">
-                <h4 className="text-lg font-semibold text-green-400 mb-2">CTF Competitions</h4>
-                <ul className="text-gray-300 space-y-1 text-sm">
-                  <li>PicoCTF</li>
-                  <li>OverTheWire</li>
-                  <li>Local University CTFs</li>
-                  <li>SANS Holiday Hack</li>
-                </ul>
-              </div>
-              <div className="text-center">
-                <h4 className="text-lg font-semibold text-green-400 mb-2">Lab Environments</h4>
-                <ul className="text-gray-300 space-y-1 text-sm">
-                  <li>Home Lab Setup</li>
-                  <li>Virtual Machines</li>
-                  <li>Network Simulation</li>
-                  <li>Vulnerability Testing</li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
