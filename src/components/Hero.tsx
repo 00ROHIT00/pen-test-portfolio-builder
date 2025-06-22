@@ -1,6 +1,5 @@
-import { Shield, Terminal, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Download } from "lucide-react";
 
 const Hero = () => {
   const scrollToNextSection = () => {
@@ -10,7 +9,8 @@ const Hero = () => {
     }
   };
 
-  return <section className="min-h-screen flex items-center justify-center relative bg-gray-900">
+  return (
+    <section id="hero" className="min-h-screen flex items-center justify-center relative bg-gray-900">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-900/95 to-gray-900/50 z-0"></div>
         <div
@@ -34,15 +34,22 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button 
-              size="lg" 
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 text-lg 
-                transition-all duration-300 hover:scale-105 border-2 border-green-500
-                active:scale-95 active:translate-y-0.5 active:shadow-inner
-                shadow-lg shadow-green-900/20"
+            <a 
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Download Resume
-            </Button>
+              <Button 
+                size="lg" 
+                className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 text-lg 
+                  transition-all duration-300 hover:scale-105 border-2 border-green-500
+                  active:scale-95 active:translate-y-0.5 active:shadow-inner
+                  shadow-lg shadow-green-900/20 flex items-center gap-2"
+              >
+                <Download className="w-5 h-5" />
+                Download Resume
+              </Button>
+            </a>
           </div>
 
           <div className="flex justify-center space-x-8 text-sm text-gray-400 font-mono">
@@ -66,6 +73,8 @@ const Hero = () => {
       >
         <ChevronDown className="w-8 h-8" />
       </button>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;

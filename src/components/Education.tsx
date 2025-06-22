@@ -20,15 +20,15 @@ const Education = () => {
                 <h3 className="text-2xl font-semibold text-white mb-2">
                   Masters of Computer Applications
                 </h3>
-                <p className="text-green-400 font-semibold mb-3">Your University Name</p>
+                <p className="text-green-400 font-semibold mb-3">Marian College Kuttikkanam Autonoumous</p>
                 <div className="flex flex-wrap gap-4 text-gray-300 mb-4">
                   <div className="flex items-center space-x-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Expected Graduation: 2025</span>
+                    <span>Expected Graduation: 2026</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Location</span>
+                    <span>Kuttikkanam, Kerala, India</span>
                   </div>
                 </div>
                 <p className="text-gray-300 mb-4">
@@ -55,15 +55,15 @@ const Education = () => {
                 <h3 className="text-2xl font-semibold text-white mb-2">
                   Bachelor of Computer Applications
                 </h3>
-                <p className="text-green-400 font-semibold mb-3">Your University Name</p>
+                <p className="text-green-400 font-semibold mb-3">Saintgits College of Applied Sciences</p>
                 <div className="flex flex-wrap gap-4 text-gray-300 mb-4">
                   <div className="flex items-center space-x-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Completed: 2023</span>
+                    <span>Completed: 2024</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Location</span>
+                    <span>Kottayam, Kerala, India</span>
                   </div>
                 </div>
                 <p className="text-gray-300 mb-4">
