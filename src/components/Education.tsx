@@ -1,9 +1,6 @@
-
 import { BookOpen, Award, Calendar, MapPin } from "lucide-react";
-
 const Education = () => {
-  return (
-    <section className="py-20 bg-gray-800" id="education">
+  return <section className="py-20 bg-gray-800" id="education">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -116,7 +113,7 @@ const Education = () => {
                 <Award className="w-8 h-8 text-green-400" />
                 <div>
                   <h3 className="text-xl font-semibold text-white">Hacking Essentials</h3>
-                  <p className="text-gray-400 text-sm">Completed 2023</p>
+                  <p className="text-gray-400 text-sm">Completed 2025</p>
                 </div>
               </div>
               <p className="text-gray-300">
@@ -139,8 +136,6 @@ const Education = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Education;
