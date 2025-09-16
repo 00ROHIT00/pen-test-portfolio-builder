@@ -100,7 +100,7 @@ const Education = () => {
                 <Award className="w-8 h-8 text-green-400" />
                 <div>
                   <h3 className="text-xl font-semibold text-white">Redhat RHCSA</h3>
-                  <p className="text-gray-400 text-sm">Undergoing</p>
+                  <p className="text-gray-400 text-sm">CERTIFIED</p>
                 </div>
               </div>
               <p className="text-gray-300">
